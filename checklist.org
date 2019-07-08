@@ -1,0 +1,7 @@
+#+TITLE: Twitch setup
+
+* Plugin the network cable
+* Audio levels
+  just check the live stream by yourself?
+  I don't know a good way for this yet
+
