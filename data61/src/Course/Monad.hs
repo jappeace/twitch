@@ -1,17 +1,17 @@
-{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE InstanceSigs        #-}
+{-# LANGUAGE NoImplicitPrelude   #-}
+{-# LANGUAGE RebindableSyntax    #-}
 {-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE InstanceSigs #-}
-{-# LANGUAGE RebindableSyntax #-}
 
 module Course.Monad where
 
-import Course.Applicative
-import Course.Core
-import Course.ExactlyOne
-import Course.Functor
-import Course.List
-import Course.Optional
-import qualified Prelude as P((=<<))
+import           Course.Applicative
+import           Course.Core
+import           Course.ExactlyOne
+import           Course.Functor
+import           Course.List
+import           Course.Optional
+import qualified Prelude            as P ((=<<))
 
 -- | All instances of the `Monad` type-class must satisfy one law. This law
 -- is not checked by the compiler. This law is given as:
@@ -133,8 +133,7 @@ join ::
   Monad f =>
   f (f a)
   -> f a
-join =
-  error "todo: Course.Monad#join"
+join fa = (=<<) id fa
 
 -- | Implement a flipped version of @(=<<)@, however, use only
 -- @join@ and @(<$>)@.
@@ -147,8 +146,7 @@ join =
   f a
   -> (a -> f b)
   -> f b
-(>>=) =
-  error "todo: Course.Monad#(>>=)"
+(>>=) mon fun = join $ fun <$> mon
 
 infixl 1 >>=
 

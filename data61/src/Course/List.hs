@@ -1,7 +1,7 @@
-{-# LANGUAGE NoImplicitPrelude #-}
+{-# LANGUAGE FlexibleInstances   #-}
+{-# LANGUAGE NoImplicitPrelude   #-}
+{-# LANGUAGE OverloadedStrings   #-}
 {-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE FlexibleInstances #-}
 
 -- + Complete the 10 exercises below by filling out the function bodies.
 --   Replace the function bodies (error "todo: ...") with an appropriate
@@ -14,12 +14,12 @@
 module Course.List where
 
 import qualified Control.Applicative as A
-import qualified Control.Monad as M
-import Course.Core
-import Course.Optional
-import qualified System.Environment as E
-import qualified Prelude as P
-import qualified Numeric as N
+import qualified Control.Monad       as M
+import           Course.Core
+import           Course.Optional
+import qualified Numeric             as N
+import qualified Prelude             as P
+import qualified System.Environment  as E
 
 
 -- $setup
@@ -471,7 +471,7 @@ unfoldr ::
 unfoldr f b  =
   case f b of
     Full (a, z) -> a :. unfoldr f z
-    Empty -> Nil
+    Empty       -> Nil
 
 lines ::
   Chars
@@ -506,7 +506,7 @@ listOptional _ Nil =
 listOptional f (h:.t) =
   let r = listOptional f t
   in case f h of
-       Empty -> r
+       Empty  -> r
        Full q -> q :. r
 
 any ::
@@ -617,7 +617,7 @@ reads ::
   -> Optional (a, Chars)
 reads s =
   case P.reads (hlist s) of
-    [] -> Empty
+    []         -> Empty
     ((a, q):_) -> Full (a, listh q)
 
 read ::
@@ -633,7 +633,7 @@ readHexs ::
   -> Optional (a, Chars)
 readHexs s =
   case N.readHex (hlist s) of
-    [] -> Empty
+    []         -> Empty
     ((a, q):_) -> Full (a, listh q)
 
 readHex ::
@@ -649,7 +649,7 @@ readFloats ::
   -> Optional (a, Chars)
 readFloats s =
   case N.readSigned N.readFloat (hlist s) of
-    [] -> Empty
+    []         -> Empty
     ((a, q):_) -> Full (a, listh q)
 
 readFloat ::
