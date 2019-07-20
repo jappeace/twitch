@@ -1,0 +1,33 @@
+#+TITLE: Twitch setup
+
+https://www.youtube.com/watch?v=OyfBQmvr2Hc
+
+* Pre stream
+** DONE Music
+https://www.youtube.com/watch?v=V3n78uCYdso&list=PLzCxunOM5WFL4gtB-trNBjuG8f4C7a-G
+https://app.pretzel.rocks/player
+** DONE Plugin micophone
+** DONE Plugin the network cable
+*** Check square and bitrate
+** DONE Check twitch dashboard title
+** TODO open obs, Show sayaka
+** TODO Close unrelated stuff (like browser tabs)
+*** TODO Disable email program
+*** TODO Keypass
+
+** TODO Open up chat
+** TODO screencast key thing
+** TODO Beverage
+   get thirsty from talking
+** TODO Twitch category
+   science & tech usually
+
+* On stream
+** TODO PRES THE BUTTON
+** TODO Audio levels
+*** TODO Fix mic audio, echo annoying
+
+  just check the live stream by yourself?
+  I don't know a good way for this yet
+** TODO Transition when ready
+
