@@ -1,0 +1,9 @@
++ make raster.click awesome!
+  + Fix undo
+  + make timwriting feasable
+  + alternative inplan layout
++ Help myself opensource stream
+  -- where I help myself by fixing opensource things
++ Fix emacs stream
++ The great nix stream
++ ADTs presentation prep stream
