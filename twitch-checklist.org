@@ -3,13 +3,14 @@
 https://www.youtube.com/watch?v=OyfBQmvr2Hc
 
 * Pre stream
-** DONE Music
+** TODO Music
 https://www.youtube.com/watch?v=V3n78uCYdso&list=PLzCxunOM5WFL4gtB-trNBjuG8f4C7a-G
 https://app.pretzel.rocks/player
-** DONE Plugin micophone
-** DONE Plugin the network cable
+** TODO Plugin micophone
+** TODO Plugin the network cable
 *** Check square and bitrate
-** DONE Check twitch dashboard title
+** TODO Start bot    
+** TODO Check twitch dashboard title
 ** TODO open obs, Show sayaka
 ** TODO Close unrelated stuff (like browser tabs)
 *** TODO Disable email program
@@ -22,6 +23,20 @@ https://app.pretzel.rocks/player
 ** TODO Twitch category
    science & tech usually
 
+** TODO Setup build shit
+** TODO Font size
+
+#+BEGIN_SRC elisp
+(push '(font . "firacode-16") default-frame-alist)
+#+END_SRC
+
+#+RESULTS:
+: ((font . firacode-16) (font . firacode-16) (font . firacode-12) (vertical-scroll-bars))
+
+** TODO Broadcast
+*** TODO Twitter
+*** TODO Discord
+
 * On stream
 ** TODO PRES THE BUTTON
 ** TODO Audio levels
@@ -31,3 +46,11 @@ https://app.pretzel.rocks/player
   I don't know a good way for this yet
 ** TODO Transition when ready
 
+** TODO Discuss what we're doing today
+
+* Ending
+** TODO Commit summary
+** TODO Review stream
+** TODO Thank everyone for watching
+** TODO Transition to end overlay
+** TODO Check if we can raid, 5+ people
