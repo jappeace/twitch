@@ -1,0 +1,67 @@
+#+TITLE: Cateogry
+
+* Chalenges
+** What is a product of two objects in a poset? Hint: Use the universal construction.
+   (a,b)
+
+   ??
+
+** What is a coproduct of two objects in a poset?
+   a | b
+   ??
+
+** Implement the equivalent of Haskell Either as a generic type in your favorite language (other than Haskell).
+
+#+BEGIN_SRC rust
+
+enum Either<A,B>{
+  Left(A),
+  Right(B)
+}
+
+#+END_SRC
+
+** Show that Either is a “better” coproduct than int equipped with two injections: 
+   
+#+BEGIN_SRC C++
+int i(int n) { return n; }
+int j(bool b) { return b? 0: 1; }
+
+#+END_SRC
+
+Define factorize
+#+BEGIN_SRC C++
+int m(Either const & e);
+#+END_SRC
+
+** Continuing the previous problem: How would you argue that int with the two injections i and j cannot be “better” than Either?
+   
+
+Either int bool has 2+2^32-1 possible outcomes whereas int just has 2^32-1
+
+** Still continuing: What about these injections? 
+
+Pure implementations won't change anything.
+One needs unsafeIO.
+
+
+* Notes on ADTs
+https://bartoszmilewski.com/2015/01/13/simple-algebraic-data-types/
+
+** In code
+
+#+BEGIN_SRC haskell
+data Either a b = Left a | Right b
+data Tupple a b = Tupple { left :: a, right :: b}
+
+three a b c = Tuppe (Tupple a b) c
+four a b c d = Tuppe (Tupple a b) (Tupple c d)
+#+END_SRC
+
+#+BEGIN_SRC scala
+sealed trait Either[A+,B+]
+final case class Left[A+,B+](ddd:A) extends Either[A+,B+]
+final case class Right[A+,B+](ddd:B) extends Either[A+,B+]
+
+final case class Tupple(left: A, right: B)
+#+END_SRC
