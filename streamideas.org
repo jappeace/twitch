@@ -1,9 +1,29 @@
-+ make raster.click awesome!
+* make raster.click awesome!
   + Fix undo
   + make timwriting feasable
   + alternative inplan layout
-+ Help myself opensource stream
+* Help myself opensource stream
   -- where I help myself by fixing opensource things
-+ Fix emacs stream
-+ The great nix stream
-+ ADTs presentation prep stream
+** Fix servant-client
+
+** Fix compton workspace switching
+   At the moment the fade effect when switching workspace
+   is just slow
+
+* Fix emacs stream
+* The great nix stream
+  write about nix things?
+* ADTs presentation prep stream
+
+* Rust stream
+** Make game run
+** Implement functor, applicative, monad, traversable, foldable, profunctor
+   Maybe with help of parser combinator course for first three?
+   Profunctor for let's lens?
+
+* Language review
+  Look at obscure langauges and built something non-trivial?
+  
+** Mecury
+** ATS
+http://www.ats-lang.org/
