@@ -1,0 +1,14 @@
+
+* TODO Fix docs, just ms for timers
+  It was hard to figure out how to use this the first time around
+
+* TODO Document command langauge?
+  I just looked at the stream to figure it out
+* TODO Make dubtrack room not be hardcoded
+* TODO Make linke to subscribe configurable
+** DONE write code
+** TODO Make pr
+* TODO Make link to schedule configurable
+* TODO Markov on timer doesn't use right botname
+* TODO Shitpost command
+  
