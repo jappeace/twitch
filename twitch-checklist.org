@@ -17,7 +17,6 @@ https://app.pretzel.rocks/player
 *** TODO Keypass
 
 ** TODO Open up chat
-** TODO screencast key thing
 ** TODO Beverage
    get thirsty from talking
 ** TODO Twitch category
