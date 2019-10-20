@@ -1,0 +1,7 @@
+#+TITLE: Twitch project
+
+
+This is a project for a couple of twitch related documents.
+
+For example a schedule, some plans I have for the chatbot
+and my checklist to get started.
