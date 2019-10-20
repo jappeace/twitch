@@ -10,5 +10,9 @@
 ** TODO Make pr
 * TODO Make link to schedule configurable
 * TODO Markov on timer doesn't use right botname
+* TODO Add hoogle support
+  w/ hoogle server it'd be possible to allow chat to look up typesignatures
+
 * TODO Shitpost command
+  Allow users to post images to view later?
   
