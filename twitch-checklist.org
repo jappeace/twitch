@@ -2,6 +2,11 @@
 
 https://www.youtube.com/watch?v=OyfBQmvr2Hc
 
+* Imporvoe
+  
+** TODO Chatterino
+** TODO Syncrhonize video
+
 * Pre stream
 ** TODO Music
 https://www.youtube.com/watch?v=V3n78uCYdso&list=PLzCxunOM5WFL4gtB-trNBjuG8f4C7a-G
@@ -30,7 +35,7 @@ https://app.pretzel.rocks/player
 #+END_SRC
 
 #+RESULTS:
-: ((font . firacode-16) (font . firacode-16) (font . firacode-12) (vertical-scroll-bars))
+: ((font . firacode-16) (font . firacode-16) (vertical-scroll-bars))
 
 ** TODO Broadcast
 *** TODO Twitter
@@ -44,6 +49,9 @@ https://app.pretzel.rocks/player
   just check the live stream by yourself?
   I don't know a good way for this yet
 ** TODO Transition when ready
+   + Discuss marketing
+*** Go trough devlog
+
 
 ** TODO Discuss what we're doing today
 
