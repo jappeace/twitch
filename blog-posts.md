@@ -47,9 +47,8 @@ https://www.youtube.com/watch?v=OyfBQmvr2Hc
 ## Haskell startup
 https://www.youtube.com/watch?v=ZR3Jirqk6W8
 
-### Should use haskell for my startup?
-  These are some of my own comments with regards to that video.
-  I'm somewhat defensive, but I still think I've made the right decision.
+These are some of my own comments with regards to that video.
+I'm somewhat defensive, but I still think I've made the right decision.
 #### Can get stuff done?
 I already knew most libraries (eg servant, beam) only
 reflex was experimental really.
