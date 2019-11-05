@@ -1,4 +1,5 @@
 [![Jappiejappie](https://img.shields.io/badge/twitch.tv-jappiejappie-purple?logo=twitch&style=for-the-badge)](https://www.twitch.tv/jappiejappie)
+[![Jappiejappie](https://img.shields.io/badge/discord-jappiejappie-black?logo=discord&style=for-the-badge)](https://discord.gg/Hp4agqy)
 
 On occasion I talk about random blogposts/talks.
 
@@ -10,9 +11,7 @@ interestning.
 Also if posts make references/citations
 to other posts they're more valuable.
 
-Feel free to submit your own with a PR, or simply on the discord:
-
-[![Jappiejappie](https://img.shields.io/badge/discord-jappiejappie-black?logo=discord&style=for-the-badge)](https://discord.gg/Hp4agqy)
+Feel free to submit your own with a PR, or simply on the [discord](https://discord.gg/Hp4agqy) blogpost channel.
 
 # Monad stack
 Ocharles provides an excelent overview:
