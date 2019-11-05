@@ -35,7 +35,7 @@ http://www.haskellforall.com/2012/06/you-could-have-invented-free-monads.html
 + https://blog.poisson.chat/posts/2019-10-27-continuation-submonads.html
 + https://kodimensional.dev/posts/2019-03-25-comonadic-builders
 
-# Opinion
+# Syntax
 That haskell wiki is surprisingly opinionated
 
 + https://wiki.haskell.org/Do_notation_considered_harmful
