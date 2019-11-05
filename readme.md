@@ -1,5 +1,4 @@
-#+TITLE: Twitch project
-
+[![Jappiejappie](https://img.shields.io/badge/twitch.tv-jappiejappie-purple?logo=twitch&style=for-the-badge)](https://www.twitch.tv/jappiejappie)
 
 This is a project for a couple of twitch related documents.
 
