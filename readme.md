@@ -5,4 +5,4 @@ This is a project for a couple of twitch related documents.
 For example a schedule, some plans I have for the chatbot
 and my checklist to get started.
 
-Checkout my [[https://www.twitch.tv/jappiejappie][stream!]]
+Checkout my [stream!](https://www.twitch.tv/jappiejappie)
