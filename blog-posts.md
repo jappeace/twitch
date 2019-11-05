@@ -14,6 +14,10 @@ to other posts they're more valuable.
 Feel free to submit your own with a PR, or simply on the [discord](https://discord.gg/Hp4agqy) blogpost channel.
 
 # Monad stack
+You should not worry about this untill your application
+has at least 2k lines of code.
+Just keep doing everything in IO up to that point.
+
 Ocharles provides an excelent overview:
 https://ocharles.org.uk/posts/2016-01-26-transformers-free-monads-mtl-laws.html
 
@@ -28,14 +32,20 @@ http://www.haskellforall.com/2012/06/you-could-have-invented-free-monads.html
 + https://www.reddit.com/r/haskell/comments/7q4sku/are_people_using_freer_monads_or_still_mostly/
 
 # Type level
+Typelevel magick can lead to beautifull abstractions.
+
 + https://kcsongor.github.io/symbol-parsing-haskell/
 
 # Comonads
+I attempted to understand co-monads, they seem to favour
+builder like dsl's. Where additional functions describe
+aditional properties of the final product.
+
 + https://blog.poisson.chat/posts/2019-10-27-continuation-submonads.html
 + https://kodimensional.dev/posts/2019-03-25-comonadic-builders
 
 # Syntax
-That haskell wiki is surprisingly opinionated
+That haskell wiki is surprisingly opinionated.
 
 + https://wiki.haskell.org/Do_notation_considered_harmful
 
