@@ -49,23 +49,22 @@ https://www.youtube.com/watch?v=ZR3Jirqk6W8
 
 ### Should use haskell for my startup?
   These are some of my own comments with regards to that video.
-  I'm somewhat defensive, but I think I've made the right decision still.
-  I'm still Rust curious.
+  I'm somewhat defensive, but I still think I've made the right decision.
 #### Can get stuff done?
-      I already knew most libraries (eg servant, beam) only
-      reflex was experimental really.
+I already knew most libraries (eg servant, beam) only
+reflex was experimental really.
 #### Can find people?
-      I think haskell is very popular, for example
-      the initial haskell meetup in amsterdam was bascially sold out
-      first day.
+I think haskell is very popular, for example
+the initial haskell meetup in amsterdam was bascially sold out
+first day.
 #### Try new if have time?
-      The haskell choice wasn't new for me,
-      reflex was but I gave it a couple of weeks to try out.
-      I was happy w/ initial results, otherwise I would've swtiched away.
-      Speed is still an issue for reflex.
-      Maybe on opensource day we'll try investigating ghcjs at some point.
+The haskell choice wasn't new for me,
+reflex was but I gave it a couple of weeks to try out.
+I was happy w/ initial results, otherwise I would've swtiched away.
+Speed is still an issue for reflex.
+Maybe on opensource day we'll try investigating ghcjs at some point.
 
 ### High risk
-      Buisness model hasn't been proven:
-      I think saas has been proven,
-      I just need to make sure I can sell it.
+Buisness model hasn't been proven:
+I think saas has been proven,
+I just need to make sure I can sell it.
