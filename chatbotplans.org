@@ -16,3 +16,5 @@
 * TODO Shitpost command
   Allow users to post images to view later?
   
+  
+* TODO Use a WS connection to fetch a sentence from text synth given a seed
