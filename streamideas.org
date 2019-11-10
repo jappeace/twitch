@@ -40,5 +40,8 @@ https://github.com/thomashoneyman/purescript-halogen-realworld
 ** Hoogle
 https://pursuit.purescript.org 
 
+
+** PSCID
+https://github.com/kRITZCREEK/pscid 
 * Racket
   If I want to become a lisp boi
