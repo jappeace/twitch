@@ -27,3 +27,18 @@
 ** Mecury
 ** ATS
 http://www.ats-lang.org/
+
+
+* Halogen & purescript
+
+** For nix bois:
+https://github.com/justinwoo/easy-purescript-nix 
+
+** Examples
+https://github.com/thomashoneyman/purescript-halogen-realworld 
+
+** Hoogle
+https://pursuit.purescript.org 
+
+* Racket
+  If I want to become a lisp boi
