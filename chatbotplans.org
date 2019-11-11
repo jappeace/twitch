@@ -4,10 +4,10 @@
 
 * TODO Document command langauge?
   I just looked at the stream to figure it out
-* TODO Make dubtrack room not be hardcoded
-* TODO Make linke to subscribe configurable
+* DONE Make dubtrack room not be hardcoded
+* DONE Make linke to subscribe configurable
 ** DONE write code
-** TODO Make pr
+** DONE Make pr
 * TODO Make link to schedule configurable
 * TODO Markov on timer doesn't use right botname
 * TODO Add hoogle support
