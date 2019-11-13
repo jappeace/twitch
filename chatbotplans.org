@@ -7,6 +7,7 @@
 
 * TODO Document custom commands
 I want to add the custom commands to help page directly.
+https://github.com/tsoding/HyperNerd/pull/814
   
 I think it's related to this but less ambitious:
 https://github.com/tsoding/HyperNerd/issues/218
