@@ -46,6 +46,14 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
 ** ATS
 http://www.ats-lang.org/
 
+** APL 
+   Array based langague.
+
+   It has the annoying symbols.
+
+https://en.wikipedia.org/wiki/APL_(programming_language)
+
+https://github.com/lokedhs/gnu-apl-mode
 
 * Halogen & purescript
 
