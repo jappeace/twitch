@@ -55,6 +55,7 @@ https://en.wikipedia.org/wiki/APL_(programming_language)
 
 https://github.com/lokedhs/gnu-apl-mode
 
+Consider using oneko for additional frustrations
 * Halogen & purescript
 
 ** For nix bois:
