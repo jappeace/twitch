@@ -33,6 +33,11 @@ http://www.ats-lang.org/
 
 
 ** Idris
+   N body?
    
 ** Coq
-   Make a proof
+   Proof to the world I can proof
+   Proof the existence of pi
+   Eat pi
+   
+   jap-pi
