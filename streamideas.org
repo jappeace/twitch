@@ -1,3 +1,6 @@
+* Toy problems
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.html
+
 * make raster.click awesome!
   + Fix undo
   + make timwriting feasable
@@ -27,3 +30,9 @@
 ** Mecury
 ** ATS
 http://www.ats-lang.org/
+
+
+** Idris
+   
+** Coq
+   Make a proof
