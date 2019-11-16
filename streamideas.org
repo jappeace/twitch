@@ -45,3 +45,21 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
 ** Mecury
 ** ATS
 http://www.ats-lang.org/
+
+
+* Halogen & purescript
+
+** For nix bois:
+https://github.com/justinwoo/easy-purescript-nix 
+
+** Examples
+https://github.com/thomashoneyman/purescript-halogen-realworld 
+
+** Hoogle
+https://pursuit.purescript.org 
+
+
+** PSCID
+https://github.com/kRITZCREEK/pscid 
+* Racket
+  If I want to become a lisp boi

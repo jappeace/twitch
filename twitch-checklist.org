@@ -2,18 +2,10 @@
 
 https://www.youtube.com/watch?v=OyfBQmvr2Hc
 
-* Imporvoe
-  
-** TODO Chatterino
-** TODO Syncrhonize video
-
 * Pre stream
 ** TODO Music
 https://www.youtube.com/watch?v=V3n78uCYdso&list=PLzCxunOM5WFL4gtB-trNBjuG8f4C7a-G
 https://app.pretzel.rocks/player
-** TODO Plugin micophone
-** TODO Plugin the network cable
-*** Check square and bitrate
 ** TODO Start bot    
 ** TODO Check twitch dashboard title
 ** TODO open obs, Show sayaka

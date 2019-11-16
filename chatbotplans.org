@@ -4,10 +4,6 @@
 
 * TODO Document command langauge?
   I just looked at the stream to figure it out
-* DONE Make dubtrack room not be hardcoded
-* DONE Make linke to subscribe configurable
-** DONE write code
-** DONE Make pr
 * TODO Make link to schedule configurable
 * TODO Markov on timer doesn't use right botname
 * TODO Add hoogle support
@@ -16,3 +12,4 @@
 * TODO Shitpost command
   Allow users to post images to view later?
   
+* TODO Use a WS connection to fetch a sentence from text synth given a seed

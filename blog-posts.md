@@ -34,7 +34,11 @@ http://www.haskellforall.com/2012/06/you-could-have-invented-free-monads.html
 # Type level
 Typelevel magick can lead to beautifull abstractions.
 
+## Type level strings
 + https://kcsongor.github.io/symbol-parsing-haskell/
+
+## Instances
++ https://kseo.github.io/posts/2017-02-05-avoid-overlapping-instances-with-closed-type-families.html
 
 # Comonads
 I attempted to understand co-monads, they seem to favour
