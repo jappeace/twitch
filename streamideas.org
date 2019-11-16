@@ -27,9 +27,6 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
 * Language review
   Look at obscure langauges and built something non-trivial?
   
-** Mecury
-** ATS
-http://www.ats-lang.org/
 
 
 ** Idris
@@ -41,3 +38,10 @@ http://www.ats-lang.org/
    Eat pi
    
    jap-pi
+
+** Shen lisp
+   Make linear types of course
+
+** Mecury
+** ATS
+http://www.ats-lang.org/
