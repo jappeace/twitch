@@ -10,6 +10,16 @@
    At the moment the fade effect when switching workspace
    is just slow
 
+** Cachix don't duplicate binary cache
+   Currently cachix will put everything that is in the store into my repo,
+   seriously limitiing the amount we can store in there.
+   
+   This issue is about trying to solve that: https://github.com/cachix/cachix/issues/16
+   
+   I think the CLI argument is an easy solution to this, eg:
+    `cachix push mycache --exclude-present-in https://cache.nixos.org`
+
+
 * Fix emacs stream
 * The great nix stream
   write about nix things?
