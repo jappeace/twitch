@@ -16,6 +16,8 @@
     `cachix push mycache --exclude-present-in https://cache.nixos.org`
 
 
+* FONT STREAM!!!
+
 * Fix emacs stream
 * The great nix stream
   write about nix things?
