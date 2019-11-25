@@ -20,15 +20,7 @@ https://app.pretzel.rocks/player
    science & tech usually
 
 ** TODO Setup build shit
-** TODO Font size
-
-#+BEGIN_SRC elisp
-(push '(font . "firacode-16") default-frame-alist)
-#+END_SRC
-
-#+RESULTS:
-: ((font . firacode-16) (font . firacode-16) (vertical-scroll-bars))
-
+** TODO Check twitch tags
 ** TODO Broadcast
 *** TODO Twitter
 *** TODO Discord
