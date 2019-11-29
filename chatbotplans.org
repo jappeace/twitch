@@ -4,22 +4,6 @@
 
 * TODO Document command langauge?
   I just looked at the stream to figure it out
-
-* TODO Document custom commands
-I want to add the custom commands to help page directly.
-https://github.com/tsoding/HyperNerd/pull/814
-  
-I think it's related to this but less ambitious:
-https://github.com/tsoding/HyperNerd/issues/218
-
-We'll split up the org file with headings. Eg:
-** Builtin
-   | name | description | source definition |
-
-** Custom
-
-   | name | definition |
-
 * TODO Make link to schedule configurable
 * TODO Markov on timer doesn't use right botname
 * TODO Add hoogle support

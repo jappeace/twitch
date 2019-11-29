@@ -1,3 +1,6 @@
+* Toy problems
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.html
+
 * make raster.click awesome!
   + Fix undo
   + make timwriting feasable
@@ -32,11 +35,35 @@
 * Language review
   Look at obscure langauges and built something non-trivial?
   
+
+
+** Idris
+   N body?
+   
+** Coq
+   Proof to the world I can proof
+   Proof the existence of pi
+   Eat pi
+   
+   jap-pi
+
+** Shen lisp
+   Make linear types of course
+
 ** Mecury
 ** ATS
 http://www.ats-lang.org/
 
+** APL 
+   Array based langague.
 
+   It has the annoying symbols.
+
+https://en.wikipedia.org/wiki/APL_(programming_language)
+
+https://github.com/lokedhs/gnu-apl-mode
+
+Consider using oneko for additional frustrations
 * Halogen & purescript
 
 ** For nix bois:

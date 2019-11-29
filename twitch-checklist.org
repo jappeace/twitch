@@ -26,6 +26,8 @@ https://app.pretzel.rocks/player
 *** TODO Discord
 
 * On stream
+** TODO Read a peom
+http://cavafis.compupress.gr/index2.htm
 ** TODO PRES THE BUTTON
 ** TODO Audio levels
 *** TODO Fix mic audio, echo annoying
