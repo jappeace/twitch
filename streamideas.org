@@ -9,6 +9,7 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
   -- where I help myself by fixing opensource things
 ** Fix servant-client
 
+** Add Char to datakind in GHC
 ** Cachix don't duplicate binary cache
    Currently cachix will put everything that is in the store into my repo,
    seriously limitiing the amount we can store in there.
