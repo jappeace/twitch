@@ -1,16 +1,225 @@
-#+TITLE: Cateogry
+#+TITLE: Algebraic Data Types 
+#+SUBTITLE: Category theory for programmers
+* Tuples
+#+BEGIN_SRC haskell
+epicTuples :: (String, Int)
 
-* Chalenges
-** What is a product of two objects in a poset? Hint: Use the universal construction.
+swap :: (a, b) -> (b, a)
+swap (x, y) = (y, x)
+
+stillEpic :: (Int, String)
+#+END_SRC
+
+* Monoid tupple
+#+BEGIN_SRC haskell
+alpha :: ((a, b), c) -> (a, (b, c))
+associativity (a * b) * c = a * (b * c)
+#+END_SRC
+
+#+BEGIN_SRC haskell
+isIso :: Iso' a (a, ())
+#+END_SRC
+
++ () = neutral element
++ (,) = binary
+
+* Pair
+#+BEGIN_SRC haskell
+data Pair a b = P a b
+first :: Pair a b -> a
+first (P a _) = a
+setFirst :: Pair a b -> a -> Pair a b
+setFirst (P _ b) a = P a b
+#+END_SRC
+
+#+BEGIN_SRC java
+class Pair<A,B>{
+  public final A first;
+  public final B second;
+  public Pair(A d, B c){
+      first = d;
+      second = c;
+  }
+}
+#+END_SRC
+
+* Records
+#+BEGIN_SRC haskell
+data Person = Person { name :: Text, age :: Int}
+#+END_SRC
+
+#+BEGIN_SRC java
+class Person{
+  public final String name;
+  public final int age;
+}
+#+END_SRC
+
+
+* Either
+
+#+BEGIN_SRC haskell
+data Either a b = Left a | Right b
+#+END_SRC
+
+#+BEGIN_SRC scala
+sealed trait Either[+A,+B]
+final case class Left[+A,+B](ddd:A) extends Either[+A,+B]
+final case class Right[+A,+B](ddd:B) extends Either[+A,+B]
+#+END_SRC
+
+* Monoid Either
+  + Void = neutral element
+  + Either = binary
+
+#+BEGIN_SRC haskell
+isIso :: Iso' (Either a Void) a
+#+END_SRC 
+
+* Analogy
+  addition and multiplaction
+  + () = 1
+  + Void = 0
+
+* Annihilation
+a*0 = 0
+
+#+BEGIN_SRC haskell
+canMake :: (Int, Void)
+isIso :: Iso' Void (a, Void)
+#+END_SRC
+
+
+* Distributive property
+#+BEGIN_SRC haskell
+a * (b + c) = a * b + a * c
+
+prodToSum :: (a, Either b c) -> Either (a, b) (a, c)
+prodToSum (x, e) = 
+    case e of
+      Left  y -> Left  (x, y)
+      Right z -> Right (x, z)
+
+sumToProd :: Either (a, b) (a, c) -> (a, Either b c)
+sumToProd e = 
+    case e of
+      Left  (x, y) -> (x, Left  y)
+      Right (x, z) -> (x, Right z)
+#+END_SRC
+
+
+* Rig
+  semiring = ring without an n
+
+  + (R, +) commutaive monoid w/ identity el 0
+  + (R, *) monoid w/ identity el 1
+  + Multiplication distributes over addition
+  + Multiplication by 0, annihlates R
+
+https://en.wikipedia.org/wiki/Semiring
+
+* Numbers
+
+| Numbers   | Types                            |
+|-----------+----------------------------------|
+| 0         | Void                             |
+| 1         | ()                               |
+| a + b     | Either a b                       |
+| a * b     | (a, b)                           |
+| 2 = 1 + 1 | data Bool = True or False        |
+| 1 + a     | data Maybe a = Nothing or Just a |
+
+* Logic
+
+| Numbers   | Types                            |
+|-----------+----------------------------------|
+| false    | Void                             |
+| true     | ()                               |
+| a || b     | Either a b                       |
+| a && b | (a, b)                           |
+
+* Challenges
+  
+* ISO
+Show the isomorphism between Maybe a and Either () a.
+
+#+BEGIN_SRC haskell
+from :: Maybe a -> Either () a
+from Just x = Right x
+from Nothing = Left ()
+
+to ::  Either () a -> Maybe a
+to Right x = Just x
+to Left _ = Nothing
+#+END_SRC
+
+* Area java
+
+#+BEGIN_SRC java
+interface Aread {
+   float getArea();
+   float circ();
+}
+class Circle implements Aread {
+  public final float radius;
+  @Override
+  public float getArea () {
+    return radius*radius;
+  }
+  @Override
+  public float circ () {
+    return radius*Math.pi*2.0;
+  }
+}
+class Rect implements Aread {
+  public final float d;
+  public final float h;
+  @Override
+  public float getArea () {
+    return d*h;
+  }
+  @Override
+  public float circ () {
+    return 2.0 * (d + h);
+  }
+}
+#+END_SRC 
+
+What did you touch? Everything :)
+
+
+* Skipped 4, I'm being flexed upon to hard to do this
+   
+
+* 5 what is a + a = 2 * a
+
++ Lookup + which is (Either a a)
++ Lookup 2, which is number 1, which corosponds to true in logic, which is ()
++ Lookup * which is (a,b).
+
+
+#+BEGIN_SRC  haskell
+from :: Either a a -> ((), a)
+from Left x = ((), x)
+from Right x = ((), x)
+
+to ::  ((), a) -> Either a a
+to (_, = ((), x)
+to Right x = ((), x)
+
+#+END_SRC
+   
+
+* What is a product of two objects in a poset? Hint: Use the universal construction.
    (a,b)
 
    ??
 
-** What is a coproduct of two objects in a poset?
+* What is a coproduct of two objects in a poset?
    a | b
    ??
 
-** Implement the equivalent of Haskell Either as a generic type in your favorite language (other than Haskell).
+* Implement the equivalent of Haskell Either as a generic type in your favorite language (other than Haskell).
 
 #+BEGIN_SRC rust
 
@@ -21,7 +230,7 @@ enum Either<A,B>{
 
 #+END_SRC
 
-** Show that Either is a “better” coproduct than int equipped with two injections: 
+* Show that Either is a “better” coproduct than int equipped with two injections: 
    
 #+BEGIN_SRC C++
 int i(int n) { return n; }
@@ -34,12 +243,12 @@ Define factorize
 int m(Either const & e);
 #+END_SRC
 
-** Continuing the previous problem: How would you argue that int with the two injections i and j cannot be “better” than Either?
+* Continuing the previous problem: How would you argue that int with the two injections i and j cannot be “better” than Either?
    
 
 Either int bool has 2+2^32-1 possible outcomes whereas int just has 2^32-1
 
-** Still continuing: What about these injections? 
+* Still continuing: What about these injections? 
 
 Pure implementations won't change anything.
 One needs unsafeIO.
@@ -47,21 +256,3 @@ One needs unsafeIO.
 
 * Notes on ADTs
 https://bartoszmilewski.com/2015/01/13/simple-algebraic-data-types/
-
-** In code
-
-#+BEGIN_SRC haskell
-data Either a b = Left a | Right b
-data Tupple a b = Tupple { left :: a, right :: b}
-
-three a b c = Tuppe (Tupple a b) c
-four a b c d = Tuppe (Tupple a b) (Tupple c d)
-#+END_SRC
-
-#+BEGIN_SRC scala
-sealed trait Either[A+,B+]
-final case class Left[A+,B+](ddd:A) extends Either[A+,B+]
-final case class Right[A+,B+](ddd:B) extends Either[A+,B+]
-
-final case class Tupple(left: A, right: B)
-#+END_SRC
