@@ -113,16 +113,12 @@ isIso :: Iso' Void (a, Void)
 a * (b + c) = a * b + a * c
 
 prodToSum :: (a, Either b c) -> Either (a, b) (a, c)
-prodToSum (x, e) = 
-    case e of
-      Left  y -> Left  (x, y)
-      Right z -> Right (x, z)
+prodToSum (x, Left e) = Left  (x, e)
+prodToSum (x, Right e) = Right (x, e)
 
 sumToProd :: Either (a, b) (a, c) -> (a, Either b c)
-sumToProd e = 
-    case e of
-      Left  (x, y) -> (x, Left  y)
-      Right (x, z) -> (x, Right z)
+sumToProd (Left  (x, y)) = (x, Left  y)
+sumToProd (Right (x, z)) = (x, Right z)
 #+END_SRC
 
 
@@ -153,7 +149,7 @@ https://en.wikipedia.org/wiki/Semiring
 |-----------+----------------------------------|
 | false    | Void                             |
 | true     | ()                               |
-| a || b     | Either a b                       |
+| a or b   | Either a b                       |
 | a && b | (a, b)                           |
 
 * Challenges
