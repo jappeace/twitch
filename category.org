@@ -10,19 +10,6 @@ swap (x, y) = (y, x)
 stillEpic :: (Int, String)
 #+END_SRC
 
-* Monoid tupple
-#+BEGIN_SRC haskell
-alpha :: ((a, b), c) -> (a, (b, c))
-associativity (a * b) * c = a * (b * c)
-#+END_SRC
-
-#+BEGIN_SRC haskell
-isIso :: Iso' a (a, ())
-#+END_SRC
-
-+ () = neutral element
-+ (,) = binary
-
 * Pair
 #+BEGIN_SRC haskell
 data Pair a b = P a b
@@ -31,7 +18,9 @@ first (P a _) = a
 setFirst :: Pair a b -> a -> Pair a b
 setFirst (P _ b) a = P a b
 #+END_SRC
+Can you write port this?
 
+* YES
 #+BEGIN_SRC java
 class Pair<A,B>{
   public final A first;
@@ -39,6 +28,9 @@ class Pair<A,B>{
   public Pair(A d, B c){
       first = d;
       second = c;
+  }
+  Pair<A,B> setFst(A d){
+    return new Pair<>(d,second);
   }
 }
 #+END_SRC
@@ -55,18 +47,44 @@ class Person{
 }
 #+END_SRC
 
+* Associativity 
+#+BEGIN_SRC haskell
+alpha     :: ((a, b), c) -> (a, (b, c))
+alpha_inv :: (a, (b, c)) -> ((a, b), c)
+
+associativity (a * b) * c = a * (b * c)
+#+END_SRC
+
+Put into groups like an association.
+
+* But is it a monoid?
+
+* Yes: Monoid
+#+BEGIN_SRC haskell
+isIso :: Iso' a (a, ())
+#+END_SRC
+
++ () = neutral element
++ (,) = binary
+
+* Next lvl, coproducts or sums
 
 * Either
 
 #+BEGIN_SRC haskell
 data Either a b = Left a | Right b
 #+END_SRC
+Can you port this?
 
+
+* Yes: Scala
 #+BEGIN_SRC scala
 sealed trait Either[+A,+B]
 final case class Left[+A,+B](ddd:A) extends Either[+A,+B]
 final case class Right[+A,+B](ddd:B) extends Either[+A,+B]
 #+END_SRC
+
+* But is it a monoid?
 
 * Monoid Either
   + Void = neutral element
@@ -143,6 +161,7 @@ https://en.wikipedia.org/wiki/Semiring
 * ISO
 Show the isomorphism between Maybe a and Either () a.
 
+* A
 #+BEGIN_SRC haskell
 from :: Maybe a -> Either () a
 from Just x = Right x
@@ -153,8 +172,19 @@ to Right x = Just x
 to Left _ = Nothing
 #+END_SRC
 
-* Area java
+* Area 
+  Implement in Java or C++
 
+#+BEGIN_SRC haskell
+data Shape = Circle Float
+           | Rect Float Float
+
+area :: Shape -> Float
+area (Circle r) = pi * r * r
+area (Rect d h) = d * h
+#+END_SRC
+
+* A: Java
 #+BEGIN_SRC java
 interface Aread {
    float getArea();
@@ -188,11 +218,13 @@ class Rect implements Aread {
 What did you touch? Everything :)
 
 
-* Skipped 4, I'm being flexed upon to hard to do this
-   
+* Add shape
+Add a new shape, Square, to Shape and make all the necessary updates.
+What code did you have to touch in Haskell vs. C++ or Java?
 
 * 5 what is a + a = 2 * a
 
+* A
 + Lookup + which is (Either a a)
 + Lookup 2, which is number 1, which corosponds to true in logic, which is ()
 + Lookup * which is (a,b).
@@ -210,49 +242,3 @@ to Right x = ((), x)
 #+END_SRC
    
 
-* What is a product of two objects in a poset? Hint: Use the universal construction.
-   (a,b)
-
-   ??
-
-* What is a coproduct of two objects in a poset?
-   a | b
-   ??
-
-* Implement the equivalent of Haskell Either as a generic type in your favorite language (other than Haskell).
-
-#+BEGIN_SRC rust
-
-enum Either<A,B>{
-  Left(A),
-  Right(B)
-}
-
-#+END_SRC
-
-* Show that Either is a “better” coproduct than int equipped with two injections: 
-   
-#+BEGIN_SRC C++
-int i(int n) { return n; }
-int j(bool b) { return b? 0: 1; }
-
-#+END_SRC
-
-Define factorize
-#+BEGIN_SRC C++
-int m(Either const & e);
-#+END_SRC
-
-* Continuing the previous problem: How would you argue that int with the two injections i and j cannot be “better” than Either?
-   
-
-Either int bool has 2+2^32-1 possible outcomes whereas int just has 2^32-1
-
-* Still continuing: What about these injections? 
-
-Pure implementations won't change anything.
-One needs unsafeIO.
-
-
-* Notes on ADTs
-https://bartoszmilewski.com/2015/01/13/simple-algebraic-data-types/
