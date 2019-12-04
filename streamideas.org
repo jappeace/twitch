@@ -65,6 +65,14 @@ https://en.wikipedia.org/wiki/APL_(programming_language)
 https://github.com/lokedhs/gnu-apl-mode
 
 Consider using oneko for additional frustrations
+
+** Hackett
+   Countoren sugessted using hackett.
+   A strongly typed lisp trying to create typefull macros
+
+https://github.com/lexi-lambda/hackett
+
+https://lexi-lambda.github.io/hackett/
 * Halogen & purescript
 
 ** For nix bois:
