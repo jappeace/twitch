@@ -38,6 +38,15 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
   
 
 
+** Clojure
+   
+*** DONE Implemented a rock paper siccors bot
+https://github.com/jappeace/rock-paper-siccors
+
+*** TODO I wan't to make a game w/ clojurescript
+    Lumie had the suggestion of using conduit for example: https://jacekschae.github.io/conduit-re-frame-10x-demo/
+
+
 ** Idris
    N body?
    
