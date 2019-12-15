@@ -81,3 +81,9 @@ https://pursuit.purescript.org
 https://github.com/kRITZCREEK/pscid 
 * Racket
   If I want to become a lisp boi
+
+
+* Hacking editors
+- read a morning paper
+- setup epic font in atom, make as extension
+- twitch extension for vscode
