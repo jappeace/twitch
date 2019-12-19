@@ -17,6 +17,8 @@ Then I put it in Hyper (electron based terminal).
 
 ![hyper](./hyper.png)
 
+
+(we couldn't figure out the borders like on atom, if you know how to please send a PR.
 # Conclusion
 Now life is good.
 
