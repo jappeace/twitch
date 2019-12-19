@@ -1,0 +1,35 @@
+body:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    width:120%;
+    height:120%;
+    top: -100px;
+    left: -100px;
+    z-index: 10;
+    background-image: repeating-linear-gradient(0deg,transparent,transparent 3%,rgba(0,255,0,0.2) 3%,rgba(0,0,0,0.5) 4%,transparent 5%,transparent 7%);
+    background-position: 0 0;
+    background-color: rgba(48, 187, 48, 0.1);
+    background-size: 200% 100%;
+    animation: animatedBackground 70s linear infinite;
+}
+
+body {
+  text-shadow: 0 0 .4em #30bb30;
+  border: 100px solid black;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+    50%{
+      background-position: 0px 450px;
+    }
+    60%{
+      background-position: 0px 350px;
+    }
+    100% {
+        background-position: 0px 900px;
+    }
+}
