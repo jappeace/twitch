@@ -22,7 +22,11 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
 
 * FONT STREAM!!!
 
-* Fix emacs stream
+* Emacs
+**  Fix emacs stream
+   hahaha JK, emacs can't be fixed, just broken more differently
+** Emacs as PID 1
+
 * The great nix stream
   write about nix things?
 * ADTs presentation prep stream
@@ -48,17 +52,30 @@ https://github.com/jappeace/rock-paper-siccors
 
 
 ** Idris
-   N body?
+*** DONE   N body?
    
+*** TODO dependenly typed tensor comprehensions
+Tensor Comprehensions in SaC, Sven-Bodo Scholz
+
+** Shen lisp
+   Make linear types of course
+
+** Smalltalk
+https://pharo.org/ 
+
+** Hackett
+   Countoren sugessted using hackett.
+   A strongly typed lisp trying to create typefull macros
+
+https://github.com/lexi-lambda/hackett
+
+https://lexi-lambda.github.io/hackett/
 ** Coq
    Proof to the world I can proof
    Proof the existence of pi
    Eat pi
    
    jap-pi
-
-** Shen lisp
-   Make linear types of course
 
 ** Mecury
 ** ATS
@@ -75,13 +92,15 @@ https://github.com/lokedhs/gnu-apl-mode
 
 Consider using oneko for additional frustrations
 
-** Hackett
-   Countoren sugessted using hackett.
-   A strongly typed lisp trying to create typefull macros
+** Prolog
+** Erlang
+   Raytracer, because we need massive scalability
 
-https://github.com/lexi-lambda/hackett
+** Elixer
 
-https://lexi-lambda.github.io/hackett/
+
+** Common lisp
+Copy servant
 * Halogen & purescript
 
 ** For nix bois:
@@ -101,6 +120,13 @@ https://github.com/kRITZCREEK/pscid
 
 
 * Hacking editors
-- read a morning paper
-- setup epic font in atom, make as extension
-- twitch extension for vscode
+- Do secret CSS idea with ffmpeg
+- Checkout intelij for haskell, probably works for cut-the-crap
+
+  
+- There is this: https://css.christmas/2019/21
+
+  
+** Make scanlines for emacs?
+   How hard would this even be?
+
