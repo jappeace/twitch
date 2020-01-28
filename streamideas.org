@@ -101,6 +101,14 @@ Consider using oneko for additional frustrations
 
 ** Common lisp
 Copy servant
+
+** Julia 
+   Lumie:
+
+Julia is a really cool language, its heavily inspired by how common lisp works btw.
+but also improves on it a bit, e.g. it doesn't separate between generic and non-generic functions. it just makes everything into generic functions
+generic function is roughly equal to multimethod here
+
 * Halogen & purescript
 
 ** For nix bois:
