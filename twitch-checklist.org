@@ -7,9 +7,9 @@ https://www.youtube.com/watch?v=GI7sBsBHdCk
 ** TODO Music
 https://www.youtube.com/watch?v=V3n78uCYdso&list=PLzCxunOM5WFL4gtB-trNBjuG8f4C7a-G
 https://app.pretzel.rocks/player
-** TODO Start bot    
-** TODO Check twitch dashboard title
 ** TODO open obs, Show sayaka
+** TODO Check twitch dashboard title
+** TODO Start bot    
 ** TODO Close unrelated stuff (like browser tabs)
 *** TODO Disable email program
 *** TODO Keypass
@@ -27,8 +27,6 @@ https://app.pretzel.rocks/player
 *** TODO Discord
 
 * On stream
-** TODO Read a peom
-http://cavafis.compupress.gr/index2.htm
 ** TODO PRES THE BUTTON
 ** TODO Audio levels
 *** TODO Fix mic audio, echo annoying
@@ -48,3 +46,5 @@ http://cavafis.compupress.gr/index2.htm
 ** TODO Thank everyone for watching
 ** TODO Transition to end overlay
 ** TODO Check if we can raid, 5+ people
+
+hindent-5.2.7
