@@ -22,6 +22,23 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
 
 * FONT STREAM!!!
 
+* ELM
+** Higher kinded polymorphism
+   This would allow us to talk about monads.
+
+   What if we use function arrow to mimic these?
+   (->) a b
+* GHC
+** Add error numbers
+   This seems easy enough.
+https://github.com/ghc-proposals/ghc-proposals/pull/325
+
++ https://gitlab.haskell.org/ghc/ghc/-/wikis/building/getting-the-sources
++ https://gitlab.haskell.org/ghc/ghc/-/wikis/building/preparation/linux#nixnixos
+
+** Add type level char lists instead of symbols
+   Would make working with strings a lot easier at typelevel.
+
 * Emacs
 **  Fix emacs stream
    hahaha JK, emacs can't be fixed, just broken more differently
