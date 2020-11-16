@@ -22,6 +22,11 @@ https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/nbody.ht
 
 * FONT STREAM!!!
 
+* Idris compiles to JS
+  I want to make a web app in idris2.
+
+  How viable is this choice?
+
 * Emacs
 **  Fix emacs stream
    hahaha JK, emacs can't be fixed, just broken more differently
