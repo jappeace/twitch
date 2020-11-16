@@ -1,6 +1,7 @@
 #+TITLE: Twitch setup
 
-https://www.youtube.com/watch?v=OyfBQmvr2Hc
+https://www.youtube.com/watch?v=A4WzjmHgRe0
+https://www.youtube.com/watch?v=GI7sBsBHdCk
 
 * Pre stream
 ** TODO Music
